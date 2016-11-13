@@ -57,7 +57,7 @@ function buildChart(sensor, readings) {
             3: { targetAxisIndex: 1, type: 'line' }
         },
         vAxes: [
-            { title: 'Degrees C' },
+            { title: 'Degrees C or km/hr' },
             { title: 'Percentage' }
         ]
     };
