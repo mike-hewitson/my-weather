@@ -288,8 +288,6 @@ describe('Controller: HistoryChartCtrl', function() {
         expect(scope.chartObject1).toBeDefined();
         expect(scope.chartObject2).not.toBe(null);
         expect(scope.chartObject2).toBeDefined();
-        expect(scope.chartObject3).not.toBe(null);
-        expect(scope.chartObject3).toBeDefined();
 
     });
 });

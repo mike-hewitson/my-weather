@@ -5,22 +5,22 @@
         </div>
         <div class="row row-content">
             <form id="selectForm" name="selectForm" ng-submit="loadHistory()">
-                <div class="list">
-                    <label class="item item-input">
-                        <span class="input-label">Days to show</span>
-                        <input type="text" ng-model="days">
-                    </label>
-                    <label class="item">
-                        <button class="button button-block button-positive" type="submit">Submit</button>
-                    </label>
+                <div class="col-xs-12">
+                    <div class="list">
+                        <label class="item item-input">
+                            <span class="input-label">Days to show</span>
+                            <input type="text" ng-model="days">
+                        </label>
+                        <label class="item">
+                            <button class="button button-block button-positive" type="submit">Submit</button>
+                        </label>
+                    </div>
                 </div>
             </form>
         </div>
         <div class="row row-content" ng-if="showData">
             <div google-chart chart="chartObject1" agc-on-select="hideSeries(selectedItem)" style="height:600px; width:100%;"></div>
-            <div google-chart chart="chartObject2" style="height:600px; width:100%;"></div>
-            <div google-chart chart="chartObject3" style="height:600px; width:100%;"></div>
-            <div google-chart chart="chartObject4" style="height:600px; width:100%;"></div>
+            <div google-chart chart="chartObject2" agc-on-select="hideSeries(selectedItem)" style="height:600px; width:100%;"></div>
         </div>
     </div>
 </div>

@@ -19,7 +19,7 @@ angular.module('fridgesApp')
                     $scope.showData = true;
                     $scope.message = '';
 
-                    $scope.chartObject = {};
+                    $scope.chartObject1 = {};
                     var cols = [
                         { id: 'x', label: 'Date', type: 'date' },
                         { id: 's', label: 'Maximum', type: 'number' },
@@ -38,15 +38,15 @@ angular.module('fridgesApp')
                         });
                     }
 
-                    $scope.chartObject.type = 'LineChart';
+                    $scope.chartObject1.type = 'LineChart';
 
-                    $scope.chartObject.data = {
+                    $scope.chartObject1.data = {
                         'cols': cols,
                         'rows': rows
                     };
 
-                    $scope.chartObject.options = {
-                        'title': 'Environment Conditions',
+                    $scope.chartObject1.options = {
+                        'title': 'Sandton',
                         curveType: 'function',
                         smoothLine: true,
                         series: {
