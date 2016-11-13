@@ -18,7 +18,7 @@ angular.module('fridgesApp')
     .service('summaryFactory', ['$resource', 'ENV', function($resource, ENV) {
 
         this.getSummary = function() {
-            return $resource(ENV.baseURL + 'summary/:id', null, {
+            return $resource(ENV.baseURL + 'summary/:location/:id', null, {
                 'get': { method: 'get', isArray: true }
             });
         };

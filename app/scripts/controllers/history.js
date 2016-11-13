@@ -138,10 +138,6 @@ angular.module('fridgesApp')
                             return null;
                         }
                     };
-                    // $scope.chartObject3 = buildChart('Curing', $scope.readings);
-                    // $scope.chartObject4 = buildChart('Fridge', $scope.readings);
-
-
                 },
                 /* istanbul ignore next */
                 function(response) {
