@@ -9,12 +9,12 @@
                 <div class="row" ng-repeat="sensor in reading.sensors">
                     <div class="row">
                         <h3>{{sensor.sensor}}</h3>
-                        <h5>Temperature: {{ sensor.temp.toFixed(1) }} °C</h5>
-                        <h5>Wind Speed: {{ sensor.wind.toFixed(1) }} km/hr</h5>
-                        <h5>Cloud Cover: {{ sensor.cloud.toFixed(1)}} %</h5>
-                        <h5>Humidity: {{ sensor.hum.toFixed(1)}} %</h5>
-                        <h5>Atmospheric Pressure: {{ sensor.pressure.toFixed(1) }} mBar</h>
-                        <h5>Precip Intensity: {{ sensor.precip.toFixed(1)}} cm/hr</h5>
+                        <h5>Temperature: {{ sensor.temp }} °C</h5>
+                        <h5>Wind Speed: {{ sensor.wind }} km/hr</h5>
+                        <h5>Cloud Cover: {{ sensor.cloud}} %</h5>
+                        <h5>Humidity: {{ sensor.hum }} %</h5>
+                        <h5>Atmospheric Pressure: {{ sensor.pressure }} mBar</h>
+                        <h5>Precip Intensity: {{ sensor.precip || '0.0'}} cm/hr</h5>
                     </div>
                 </div>
             </ul>
