@@ -1,0 +1,4 @@
+{
+    "name": "production",
+    "baseURL": "https://pi-fridge-server.herokuapp.com/"
+}
