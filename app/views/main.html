@@ -10,6 +10,9 @@
                     <div class="row">
                         <h3>{{sensor.sensor}}</h3>
                         <h4>Temperature: {{ sensor.temp.toFixed(1) }}°C</h4>
+                        <h4>Wind Speed: {{ sensor.wind.toFixed(1) }}km/hr</h4>
+                        <h4>Cloud Cover: {{ sensor.cloud.toFixed(1)}}%</h4>
+                        <h4>Atmospheric Pressure: {{ sensor.pressure.toFixed(1) }}mBar</h4>
                         <h4>Humidity: {{ sensor.hum.toFixed(1)}}%</h4>
                     </div>
                 </div>

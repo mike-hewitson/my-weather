@@ -47,8 +47,8 @@ Copy dist folder to server directory. Create nginx config to point at index.html
 
 ## Deployment on Heruko
 
-Set up clean heroku application, with dropbox deployment option.
-Copy the contents of the dist folder into the dropbox heroku app folder.
-Copy index.php into the dropbox folder as well. This is to fool heroku into treating this as a plain web app.
-Deploy and open app!
+Set up clean heroku application, with github deployment option.
+Copy the contents of the dist folder into the github dist repo.
+Copy index.php into the github dist folder as well. This is to fool heroku into treating this as a plain web app.
+Push to github and open app!
 

@@ -1,4 +1,4 @@
 {
     "name": "production",
-    "baseURL": "https://pi-fridge-server.herokuapp.com/"
+    "baseURL": "https://my-weather-server.herokuapp.com/"
 }
