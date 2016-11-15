@@ -8,13 +8,39 @@
             <ul class="tab-pane fade in active">
                 <div class="row" ng-repeat="sensor in reading.sensors">
                     <div class="row">
-                        <h3>{{sensor.sensor}}</h3>
-                        <h5>Temperature: {{ sensor.temp }} °C</h5>
-                        <h5>Wind Speed: {{ sensor.wind }} km/hr</h5>
-                        <h5>Cloud Cover: {{ sensor.cloud}} %</h5>
-                        <h5>Humidity: {{ sensor.hum }} %</h5>
-                        <h5>Atmospheric Pressure: {{ sensor.pressure }} mBar</h>
-                        <h5>Precip Intensity: {{ sensor.precip || '0.0'}} cm/hr</h5>
+                        <table class="table">
+                            <h3>{{sensor.sensor}}</h3>
+                            <tbody>
+                                <tr>
+                                    <td>Temperature:</td>
+                                    <td>{{ sensor.temp }} °C</td>
+                                </tr>
+                                <tr>
+                                    <td>Wind speed:</td>
+                                    <td> {{ sensor.wind }} km/hr</td>
+                                </tr>
+                                <tr>
+                                    <td>Cloud cover:</td>
+                                    <td> {{ sensor.cloud}} %</td>
+                                </tr>
+                                <tr>
+                                    <td>Humidity:</td>
+                                    <td> {{ sensor.hum }} %</td>
+                                </tr>
+                                <tr>
+                                    <td>Atmospheric pressure:</td>
+                                    <td> {{ sensor.pressure }} mBar</td>
+                                </tr>
+                                <tr>
+                                    <td>Precip probablity:</td>
+                                    <td>{{ sensor.precipProb }} %</td>
+                                </tr>
+                                <tr>
+                                    <td>Precip intensity:</td>
+                                    <td>{{ sensor.precip }} mm/hr</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </ul>
