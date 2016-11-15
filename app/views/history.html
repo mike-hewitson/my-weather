@@ -3,21 +3,22 @@
         <div ng-if="!showData">
             <h3>{{message}}</h3>
         </div>
-        <div class="col-xs-12">
-            <div class="row row-content">
+        <div class="row>">
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-3 offset-xs-3">
                 <form id="selectForm" name="selectForm" ng-submit="loadHistory()">
-                    <div class="list">
-                        <label class="item item-input">
-                            <span class="input-label">Days to show</span>
-                            <input type="text" ng-model="days">
-                        </label>
-                        <label class="item">
-                            <button class="button button-block button-positive" type="submit">Submit</button>
-                        </label>
+                    <div class="input-group">
+                        <span class="input-group-addon">Days to show</span>
+                        <input type="text" ng-model="days" class="form-control">
+                        <span class="input-group-btn">
+        <button class="btn btn-secondary" type="submit">Go!</button>
+      </span>
                     </div>
                 </form>
             </div>
         </div>
+        <!-- </div> -->
         <div class="col-xs-12">
             <div class="row row-content" ng-if="showData">
                 <div google-chart chart="chartObject1" agc-on-select="hideSeries(selectedItem)" style="height:600px; width:100%;"></div>

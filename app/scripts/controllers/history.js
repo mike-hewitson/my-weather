@@ -79,11 +79,14 @@ angular.module('fridgesApp')
 
             $scope.showData = false;
             $scope.message = 'Loading ...';
+            console.log('days', $scope.days);
             historyFactory.getHistory().get( { id: $scope.days }).$promise.then(
                 function(response) {
                     $scope.readings = response;
                     $scope.showData = true;
                     $scope.message = '';
+
+                    console.log(response);
 
                     $scope.chartObject1 = {};
 
