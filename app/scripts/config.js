@@ -2,6 +2,6 @@
 
 angular.module('config', [])
 
-.constant('ENV', {name:'production',baseURL:'https://my-weather-server.herokuapp.com/'})
+.constant('ENV', {name:'development',baseURL:'http://localhost:3000/'})
 
 ;
