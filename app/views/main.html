@@ -12,11 +12,19 @@
                             <h3>{{sensor.sensor}}</h3>
                             <tbody>
                                 <tr>
-                                    <td>Summary:</td>
+                                    <td>Day forecast:</td>
                                     <td>{{sensor.summary}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Summary:</td>
+                                    <td>Sunrise:</td>
+                                    <td>{{reading.sunrise | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunset:</td>
+                                    <td>{{reading.sunset | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Summary now:</td>
                                     <td>{{sensor.icon}}</td>
                                 </tr>
                                 <tr>
