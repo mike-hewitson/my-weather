@@ -126,6 +126,17 @@ angular.module('fridgesApp')
                         }
                     };
 
+                    // Hide cloud cover column
+                    $scope.chartObject1.view.columns[3] = {
+                        label: $scope.chartObject1.data.cols[3].label,
+                        type: $scope.chartObject1.data.cols[3].type,
+                        /* istanbul ignore next */
+                        calc: function() {
+                             /* istanbul ignore next */
+                            return null;
+                        }
+                    };
+
                     $scope.chartObject2 = buildChart('Paradise Beach', $scope.readings);
                     $scope.chartObject2.view = {
                         columns: [0, 1, 2, 3, 4]
@@ -141,6 +152,18 @@ angular.module('fridgesApp')
                             return null;
                         }
                     };
+                    // Hide cloud cover column
+                    $scope.chartObject2.view.columns[3] = {
+                        label: $scope.chartObject2.data.cols[3].label,
+                        type: $scope.chartObject2.data.cols[3].type,
+                        /* istanbul ignore next */
+                        calc: function() {
+                             /* istanbul ignore next */
+                            return null;
+                        }
+                    };
+
+
                 },
                 /* istanbul ignore next */
                 function(response) {
