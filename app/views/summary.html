@@ -1,13 +1,11 @@
-<div ng-controller="SummaryChartCtrl">
+<div class="container" ng-controller="SummaryChartCtrl">
     <div class="row row-content">
         <div ng-if="!showData">
             <h3>{{message}}</h3>
         </div>
     </div>
     <div class="row>">
-        <div class="col-xs-1">
-        </div>
-        <div class="col-xs-11 col-sm-3">
+        <div class="col-xs-6 col-sm-4">
             <form id="selectForm" name="selectForm" ng-submit="loadSummary()">
                 <div class="input-group">
                     <span class="input-group-addon">Weeks to show</span>
