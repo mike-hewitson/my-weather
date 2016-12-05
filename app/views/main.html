@@ -20,12 +20,8 @@
                                     <td>{{sensor.summaryNow}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Sunrise:</td>
-                                    <td>{{sensor.sunrise | date:'HH:mm:ss'}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Sunset:</td>
-                                    <td>{{sensor.sunset | date:'HH:mm:ss'}}</td>
+                                    <td>Sunrise/set:</td>
+                                    <td>{{sensor.sunrise | date:'HH:mm:ss'}}/{{sensor.sunset | date:'HH:mm:ss'}}</td>
                                 </tr>
                                 <tr>
                                     <td>Temperature:</td>
